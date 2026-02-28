@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roofly – Roofing Services</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: Inter, sans-serif; }
+    .font-head { font-family: Poppins, sans-serif; }
+  </style>
+</head>
+
+<body class="bg-[#f6f7fb] text-slate-900">
+
+  <!-- TOP BAR -->
+  <div class="bg-[#0f1014] text-white/80 text-xs">
+    <div class="mx-auto max-w-6xl px-4 py-2 flex items-center justify-between">
+      <p>Welcome to Roofly, We Are Professional & Skilled Roofing Company.</p>
+      <a class="text-white hover:underline" href="#">Need Any Help?</a>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <header class="bg-[#14151a] text-white">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-head text-xl font-extrabold">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-red-600/15 text-red-500">🏠</span>
+        ROOFLY
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-white/80">
+        <a class="hover:text-white" href="#home">Home</a>
+        <a class="hover:text-white" href="#about">About</a>
+        <a class="hover:text-white" href="#services">Services</a>
+        <a class="hover:text-white" href="#project">Project</a>
+        <a class="hover:text-white" href="#pages">Page</a>
+        <a class="hover:text-white" href="#contact">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-3">
+        <a class="rounded-md bg-red-600 px-4 py-2 text-sm font-semibold hover:bg-red-700" href="#contact">
+          Need Help
+        </a>
+      </div>
+
+      <button id="menuBtn" class="md:hidden grid h-10 w-10 place-items-center rounded-lg border border-white/10 hover:bg-white/10" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="hidden border-t border-white/10 md:hidden">
+      <div class="mx-auto max-w-6xl px-4 py-4 grid gap-3 text-sm text-white/90">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#project">Project</a>
+        <a href="#pages">Page</a>
+        <a href="#contact">Contact</a>
+        <a class="mt-2 inline-flex justify-center rounded-md bg-red-600 px-4 py-2 font-semibold" href="#contact">
+          Need Help
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80"
+        class="h-full w-full object-cover"
+        alt="Roofing"
+      />
+      <div class="absolute inset-0 bg-black/55"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-6xl px-4 py-16 md:py-20">
+      <div class="max-w-xl text-white">
+        <div class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white/85">
+          <span class="h-2 w-2 rounded-full bg-red-500"></span>
+          Welcome to Roofing
+        </div>
+
+        <h1 class="font-head mt-5 text-4xl font-extrabold leading-tight md:text-5xl">
+          Roofing Services for <br /> Lasting Quality.
+        </h1>
+
+        <p class="mt-4 text-sm leading-6 text-white/75">
+          Trusted roof installation and maintenance services for residential and commercial properties.
+          We deliver premium quality with expert workmanship.
+        </p>
+
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a class="rounded-md bg-red-600 px-6 py-3 text-sm font-semibold hover:bg-red-700" href="#contact">Need Help</a>
+          <a class="rounded-md bg-white px-6 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100" href="#contact">
+            Get a Quote →
+          </a>
+        </div>
+      </div>
+
+      <!-- Tabs (Commercial / Residential / Custom) -->
+      <div class="mt-10 inline-flex overflow-hidden rounded-lg bg-white shadow-lg">
+        <button class="heroTab px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50" data-tab="commercial">
+          🏢 Commercial
+        </button>
+        <button class="heroTab bg-red-600 px-5 py-3 text-sm font-semibold text-white" data-tab="residential">
+          🏠 Residential
+        </button>
+        <button class="heroTab px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50" data-tab="custom">
+          ⚙️ Custom
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE CARDS ROW -->
+  <section class="mx-auto max-w-6xl px-4 -mt-10 relative z-10">
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="rounded-xl bg-white p-6 shadow">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="font-head text-lg font-bold">Thermal insulation</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Improve efficiency and comfort with advanced insulation systems.
+            </p>
+          </div>
+          <span class="grid h-10 w-10 place-items-center rounded-lg bg-red-50 text-red-600">❄️</span>
+        </div>
+      </div>
+
+      <div class="rounded-xl bg-white p-6 shadow">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="font-head text-lg font-bold">Expert Engineer</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Certified professionals ensuring safe, reliable roof solutions.
+            </p>
+          </div>
+          <span class="grid h-10 w-10 place-items-center rounded-lg bg-red-600 text-white">🛠️</span>
+        </div>
+      </div>
+
+      <div class="rounded-xl bg-white p-6 shadow">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="font-head text-lg font-bold">Quality Maintenance</h3>
+            <p class="mt-2 text-sm text-slate-600">
+              Scheduled care to increase roof life and reduce future costs.
+            </p>
+          </div>
+          <span class="grid h-10 w-10 place-items-center rounded-lg bg-red-50 text-red-600">✅</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="grid gap-10 md:grid-cols-2 md:items-center">
+      <div>
+        <div class="text-xs font-bold uppercase tracking-widest text-red-600">About Us</div>
+        <h2 class="font-head mt-3 text-3xl font-extrabold">
+          Delivering Exceptional Roofing Services.
+        </h2>
+        <p class="mt-4 text-sm leading-6 text-slate-600">
+          We provide complete roofing solutions including installation, repairs, and regular maintenance.
+          Our mission is to deliver long-lasting quality and safety for every project.
+        </p>
+
+        <a href="#services" class="mt-7 inline-flex rounded-md bg-red-600 px-6 py-3 text-sm font-semibold text-white hover:bg-red-700">
+          About More →
+        </a>
+      </div>
+
+      <div class="relative">
+        <img
+          src="https://images.unsplash.com/photo-1581579186982-5e6b8f2b4d95?auto=format&fit=crop&w=1200&q=80"
+          class="w-full rounded-2xl object-cover shadow-lg"
+          alt="Worker"
+        />
+
+        <div class="absolute left-5 bottom-5 rounded-xl bg-red-600 px-5 py-4 text-white shadow-lg">
+          <div class="font-head text-3xl font-extrabold leading-none">25</div>
+          <div class="text-xs font-semibold">Years Of Experience</div>
+        </div>
+
+        <!-- floating list -->
+        <div class="absolute right-5 top-5 w-56 rounded-xl bg-white p-4 shadow-lg">
+          <div class="flex items-start gap-3 border-b border-slate-100 pb-3">
+            <span class="text-red-600">✦</span>
+            <div>
+              <div class="text-sm font-bold">Architectural Design</div>
+              <div class="text-xs text-slate-500">Modern roof concepts</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 border-b border-slate-100 py-3">
+            <span class="text-red-600">✦</span>
+            <div>
+              <div class="text-sm font-bold">Modern renovate</div>
+              <div class="text-xs text-slate-500">Repair & replacement</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3 pt-3">
+            <span class="text-red-600">✦</span>
+            <div>
+              <div class="text-sm font-bold">24/7 Support</div>
+              <div class="text-xs text-slate-500">Always available</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section id="services" class="bg-white py-16">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="text-center">
+        <div class="text-xs font-bold uppercase tracking-widest text-red-600">Services</div>
+        <h2 class="font-head mt-3 text-3xl font-extrabold">Awesome Roofing Solution.</h2>
+      </div>
+
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article class="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm hover:shadow">
+          <img class="h-44 w-full rounded-xl object-cover"
+               src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1200&q=80"
+               alt="Roof cleaning" />
+          <div class="mt-5 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-head text-lg font-bold">Roof Cleaning</h3>
+              <p class="mt-2 text-sm text-slate-600">Remove dirt and buildup to maintain quality and appearance.</p>
+            </div>
+            <span class="grid h-10 w-10 place-items-center rounded-lg bg-red-600 text-white">⛑</span>
+          </div>
+          <button class="mt-4 text-sm font-semibold text-red-600 hover:underline">Learn More</button>
+        </article>
+
+        <article class="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm hover:shadow">
+          <img class="h-44 w-full rounded-xl object-cover"
+               src="https://images.unsplash.com/photo-1591001764736-6c66b1d1e570?auto=format&fit=crop&w=1200&q=80"
+               alt="Single ply" />
+          <div class="mt-5 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-head text-lg font-bold">Single Ply Roofing</h3>
+              <p class="mt-2 text-sm text-slate-600">Durable membrane systems for flat and modern roof styles.</p>
+            </div>
+            <span class="grid h-10 w-10 place-items-center rounded-lg bg-red-600 text-white">⛑</span>
+          </div>
+          <button class="mt-4 text-sm font-semibold text-red-600 hover:underline">Learn More</button>
+        </article>
+
+        <article class="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm hover:shadow">
+          <img class="h-44 w-full rounded-xl object-cover"
+               src="https://images.unsplash.com/photo-1581579186982-5e6b8f2b4d95?auto=format&fit=crop&w=1200&q=80"
+               alt="Buildup" />
+          <div class="mt-5 flex items-start justify-between gap-3">
+            <div>
+              <h3 class="font-head text-lg font-bold">Buildup Roofing</h3>
+              <p class="mt-2 text-sm text-slate-600">Multiple layers of protection for long-term performance.</p>
+            </div>
+            <span class="grid h-10 w-10 place-items-center rounded-lg bg-red-600 text-white">⛑</span>
+          </div>
+          <button class="mt-4 text-sm font-semibold text-red-600 hover:underline">Learn More</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO BANNER -->
+  <section class="mx-auto max-w-6xl px-4 py-16">
+    <div class="relative overflow-hidden rounded-2xl">
+      <img
+        src="https://images.unsplash.com/photo-1581579186982-5e6b8f2b4d95?auto=format&fit=crop&w=1600&q=80"
+        class="h-[340px] w-full object-cover"
+        alt="Video banner"
+      />
+      <div class="absolute inset-0 bg-black/35"></div>
+
+      <button id="playBtn"
+        class="absolute left-1/2 top-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-white/90 text-slate-900 shadow-lg hover:bg-white"
+        aria-label="Play">
+        ▶
+      </button>
+
+      <!-- bottom tabs -->
+      <div class="absolute bottom-4 left-1/2 flex -translate-x-1/2 overflow-hidden rounded-lg bg-white shadow">
+        <button class="vidTab px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50" data-v="roof">Roof Top Care</button>
+        <button class="vidTab bg-red-600 px-5 py-3 text-sm font-semibold text-white" data-v="res">Residential</button>
+        <button class="vidTab px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50" data-v="care">Roof Top Care</button>
+      </div>
+    </div>
+
+    <p id="videoMsg" class="mt-4 hidden text-center text-sm text-slate-600">
+      Demo: video modal can be added here.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-[#14151a] py-8 text-center text-sm text-white/70">
+    © <span id="year"></span> Roofly Roofing. All rights reserved.
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
