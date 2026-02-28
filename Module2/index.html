@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AGENVO – Architectural Excellence</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts: Luxury serif + clean body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: Inter, sans-serif; background:#0b0c10; }
+    .font-head { font-family: "Playfair Display", serif; }
+    .gold { color: #d6b27a; }
+    .gold-bg { background: #d6b27a; }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(10px); }
+    .soft-shadow { box-shadow: 0 30px 80px rgba(0,0,0,0.55); }
+  </style>
+</head>
+
+<body class="text-white">
+  <!-- Page -->
+  <main >
+
+    <!-- HERO -->
+     <!-- class="relative overflow-hidden rounded-[28px] mt-10 mx-4 soft-shadow" -->
+    <section >
+      <!-- Background -->
+      <img
+        src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80"
+        class="absolute inset-0 h-full w-full object-cover"
+        alt="Architecture"
+      />
+
+      <!-- overlays -->
+      <div class="absolute inset-0 bg-black/70"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/55 to-transparent"></div>
+
+      <!-- geometric lines -->
+      <div class="pointer-events-none absolute inset-0 opacity-40">
+        <div class="absolute -left-40 -top-40 h-[520px] w-[520px] rounded-full border border-white/10"></div>
+        <div class="absolute left-1/2 top-0 h-[520px] w-[520px] -translate-x-1/2 rounded-full border border-white/10"></div>
+        <div class="absolute -right-40 -bottom-40 h-[520px] w-[520px] rounded-full border border-white/10"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(214,178,122,.18),transparent_40%)]"></div>
+      </div>
+
+      <div class="relative z-10 px-6 py-10 md:px-10 md:py-12">
+        <!-- Top brand -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="grid h-10 w-10 place-items-center rounded-xl border border-white/20 glass">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M4 20 12 4l8 16H4Z" stroke="#d6b27a" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M9.5 16h5" stroke="#d6b27a" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="text-sm tracking-[0.35em] text-white/80">AGENVO</div>
+          </div>
+
+          <div class="hidden items-center gap-6 text-xs font-semibold text-white/70 md:flex">
+            <a class="hover:text-white" href="#work">Work</a>
+            <a class="hover:text-white" href="#services">Services</a>
+            <a class="hover:text-white" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <!-- Hero grid -->
+        <div class="mt-14 grid gap-10 md:grid-cols-2 md:items-center">
+          <!-- Left -->
+          <div>
+            <h1 class="font-head text-5xl leading-[1.02] md:text-6xl">
+              Advancing <br>
+              <span class="gold">Architectural</span> <br>
+              Excellence
+            </h1>
+
+            <p class="mt-5 max-w-md text-sm leading-6 text-white/75">
+              Innovative design & engineering solutions for the future.
+            </p>
+
+            <div class="mt-7 flex items-center gap-4">
+              <a href="#work"
+                 class="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/15">
+                DISCOVER MORE
+              </a>
+
+              <button id="ghostBtn"
+                class="inline-flex items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white/80 hover:text-white">
+                View Projects →
+              </button>
+            </div>
+          </div>
+
+          <!-- Right empty (image already background) -->
+          <div class="hidden md:block"></div>
+        </div>
+
+        <!-- Features row -->
+        <div id="services" class="mt-16 grid gap-6 border-t border-white/10 pt-10 md:grid-cols-3">
+          <div class="rounded-2xl glass p-6">
+            <div class="grid h-12 w-12 place-items-center rounded-xl border border-white/15">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M4 20 12 4l8 16H4Z" stroke="#d6b27a" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="mt-4 text-sm font-semibold">Cutting-Edge Engineering</div>
+            <p class="mt-2 text-xs leading-5 text-white/70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula.
+            </p>
+          </div>
+
+          <div class="rounded-2xl glass p-6">
+            <div class="grid h-12 w-12 place-items-center rounded-xl border border-white/15">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3v18M3 12h18" stroke="#d6b27a" stroke-width="2" stroke-linecap="round"/>
+                <path d="M7 7h10v10H7z" stroke="#d6b27a" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="mt-4 text-sm font-semibold">Visionary Conceptual Designs</div>
+            <p class="mt-2 text-xs leading-5 text-white/70">
+              Eulern ipsum dolor sit amet, adipiscing elit. Ut tincidunt ligula.
+            </p>
+          </div>
+
+          <div class="rounded-2xl glass p-6">
+            <div class="grid h-12 w-12 place-items-center rounded-xl border border-white/15">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2c4 2 7 6 7 10a7 7 0 0 1-14 0C5 8 8 4 12 2Z"
+                  stroke="#d6b27a" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="mt-4 text-sm font-semibold">Sustainable Technologies</div>
+            <p class="mt-2 text-xs leading-5 text-white/70">
+              Ltfem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="work" class="mx-4 mt-10 pb-14">
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- card -->
+        <article class="overflow-hidden rounded-2xl bg-[#11131a] soft-shadow">
+          <img class="h-44 w-full object-cover"
+               src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1200&q=80"
+               alt="Tower">
+          <div class="p-6">
+            <h3 class="font-head text-xl gold">Corporate Tower</h3>
+            <p class="mt-2 text-xs leading-5 text-white/70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, dapibus.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-2xl bg-[#11131a] soft-shadow">
+          <img class="h-44 w-full object-cover"
+               src="https://images.unsplash.com/photo-1527049979667-990f1d0d8e7f?auto=format&fit=crop&w=1200&q=80"
+               alt="Pavilion">
+          <div class="p-6">
+            <h3 class="font-head text-xl gold">Futuristic Pavilion</h3>
+            <p class="mt-2 text-xs leading-5 text-white/70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, dapibus.
+            </p>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-2xl bg-[#11131a] soft-shadow">
+          <img class="h-44 w-full object-cover"
+               src="https://images.unsplash.com/photo-1529421306624-2d3fdb0d35d4?auto=format&fit=crop&w=1200&q=80"
+               alt="Render">
+          <div class="p-6">
+            <h3 class="font-head text-xl gold">Conceptual Render</h3>
+            <p class="mt-2 text-xs leading-5 text-white/70">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, dapibus.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
