@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construction Company</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  body { font-family: Inter, sans-serif; background:#f1f1f1; }
+  .font-head { font-family: Poppins, sans-serif; }
+
+  /* Ribbon Core */
+  .ribbon-container {
+    position: relative;
+    width: 260px;
+    height: 900px;
+    margin: auto;
+  }
+
+  .ribbon-core {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,#1e5f3b,#0f3e24);
+    border-radius: 140px;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.3);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px;
+    color:white;
+  }
+
+  /* White Ribbon Wrap */
+  .ribbon-wrap {
+    position:absolute;
+    width:120%;
+    height:140px;
+    background:white;
+    left:-10%;
+    border-radius:80px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+    transform:rotate(-8deg);
+  }
+
+  .wrap1 { top:120px; }
+  .wrap2 { top:340px; transform:rotate(10deg); }
+  .wrap3 { top:560px; transform:rotate(-8deg); }
+
+</style>
+</head>
+
+<body class="text-slate-900">
+
+<!-- ================= NAV ================= -->
+<header class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+  <div class="font-head text-xl font-bold">Construction Company</div>
+  <nav class="hidden md:flex gap-8 text-sm">
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= MAIN GRID ================= -->
+<section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-8 items-center">
+
+  <!-- LEFT COLUMN -->
+  <div class="space-y-8">
+
+    <div class="bg-white p-6 shadow rounded-xl">
+      <h3 class="font-head text-lg font-semibold">Services</h3>
+      <p class="mt-3 text-sm text-gray-600">
+        Professional residential and commercial construction solutions.
+      </p>
+      <button class="mt-4 bg-green-700 text-white px-4 py-2 text-sm rounded">
+        Learn More
+      </button>
+    </div>
+
+    <div class="bg-white p-6 shadow rounded-xl">
+      <h3 class="font-head text-lg font-semibold">Examples of Work</h3>
+      <p class="mt-3 text-sm text-gray-600">
+        Explore our completed home and design projects.
+      </p>
+      <button class="mt-4 bg-green-700 text-white px-4 py-2 text-sm rounded">
+        Explore
+      </button>
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1603386329225-868f9a89b5c5?auto=format&fit=crop&w=900&q=80"
+         class="rounded-xl shadow">
+  </div>
+
+  <!-- CENTER RIBBON -->
+  <div class="relative flex justify-center">
+    <div class="ribbon-container">
+
+      <div class="ribbon-core">
+        <div>
+          <h1 class="font-head text-3xl font-bold leading-snug">
+            Build Your<br>Perfect Home
+          </h1>
+        </div>
+      </div>
+
+      <div class="ribbon-wrap wrap1"></div>
+      <div class="ribbon-wrap wrap2"></div>
+      <div class="ribbon-wrap wrap3"></div>
+
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="space-y-8">
+
+    <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=80"
+         class="rounded-xl shadow">
+
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+         class="rounded-xl shadow">
+
+    <div class="bg-white p-6 shadow rounded-xl">
+      <h3 class="font-head text-lg font-semibold">Contact & Book</h3>
+      <p class="mt-3 text-sm text-gray-600">
+        Schedule your free consultation today.
+      </p>
+      <button class="mt-4 bg-green-700 text-white px-4 py-2 text-sm rounded">
+        Contact Now
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="bg-gray-800 text-white py-16 text-center">
+  <h2 class="font-head text-3xl font-bold">
+    Build your dream home today
+  </h2>
+  <button class="mt-6 bg-white text-black px-6 py-3 font-semibold rounded">
+    CALCULATE COST
+  </button>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-sm text-gray-500">
+  © <span id="year"></span> Construction Company
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
